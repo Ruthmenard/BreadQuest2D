@@ -15,7 +15,7 @@
 
         List<string> ComprehensionChoices2 = new List<string>()
         {
-            "You patiently study the symbols, connecting them to your wasteland experiences, and unlock the tome’s secrets.",
+            "You patiently study the symbols, connecting them to your wasteland experiences, and unlock the tome’s secrets.", 
             "You seek a nomadic scholar's help to decipher the text, working together to unravel its meaning.",
             "You try to brute force the translation, matching symbols to known alphabets, but struggle to make sense of it.",
             "Frustrated, you consider the book a meaningless relic and leave the library, abandoning the secrets within.",
@@ -339,24 +339,23 @@
                 switch (userChoice1)
                 {
                     case 1:
-                        Comprehension = Comprehension + 4;
-                        Rhetoric = Rhetoric + 2;
+                        Comprehension = Comprehension + 7;
                         break;
                     case 2:
-                        Comprehension = Comprehension + 4;
-                        Luck = Luck + 3;
+                        Comprehension = Comprehension + 6;
+                        Hyperawareness = Hyperawareness + 1;
                         break;
                     case 3:
                         Comprehension = Comprehension + 6;
-                        Agility = Endurance + 1;
+                        Agility = Agility + 1;
                         break;
                     case 4:
-                        Comprehension = Comprehension + 2;
+                        Comprehension = Comprehension + 4;
                         Hyperawareness = Hyperawareness + 3;
                         break;
                     case 5:
                         Comprehension = Comprehension + 1;
-                        Strength = Strength + 1;
+                        Strength = Strength + 6;
                         break;
                 }
             }
@@ -370,23 +369,23 @@
                 switch (userChoice2)
                 {
                     case 1:
-                        Comprehension = Comprehension + 5;
-                        Rhetoric = Rhetoric + 1;
+                        Comprehension = Comprehension + 7;
                         break;
                     case 2:
-                        Comprehension = Comprehension + 3;
+                        Comprehension = Comprehension + 6;
+                        Rhetoric = Rhetoric + 1;
                         break;
                     case 3:
-                        Comprehension = Comprehension + 0;
-                        Agility = Endurance + 4;
+                        Comprehension = Comprehension + 4;
+                        Luck = Luck + 3;
                         break;
                     case 4:
-                        Comprehension = Comprehension + 1;
-                        Hyperawareness = Hyperawareness + 3;
+                        Comprehension = Comprehension + 2;
+                        Agility = Agility + 5;
                         break;
                     case 5:
-                        Comprehension = Comprehension + 0;
-                        Strength = Strength + 3;
+                        Comprehension = Comprehension + 1;
+                        Strength = Strength + 6;
                         break;
                 }
 
@@ -401,27 +400,26 @@
                 switch (userChoice3)
                 {
                     case 1:
-                        Comprehension = Comprehension + 4;
-                        Rhetoric = Rhetoric + 2;
+                        Comprehension = Comprehension + 7;
                         break;
                     case 2:
-                        Comprehension = Comprehension + 2;
-                        Luck = Luck + 5;
+                        Comprehension = Comprehension + 5;
+                        Rhetoric = Rhetoric + 2;
                         break;
                     case 3:
-                        Comprehension = Comprehension + 3;
-                        Agility = Endurance + 4;
+                        Comprehension = Comprehension + 5;
+                        Luck = Luck + 2;
                         break;
                     case 4:
                         Comprehension = Comprehension + 2;
-                        Hyperawareness = Hyperawareness + 3;
+                        Hyperawareness = Hyperawareness + 5;
                         break;
                     case 5:
-                        Comprehension = Comprehension + 2;
+                        Comprehension = Comprehension + 1;
+                        Rhetoric = Rhetoric + 6;
                         break;
                 }
             }
-
             #endregion
 
             #region Assign Hyperawareness Stat
