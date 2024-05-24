@@ -3,7 +3,7 @@ using System.Threading;
 
 Game game;
 #region intro
-Console.Title = "Bread Quest v0.12";
+Console.Title = "Bread Quest v0.13";
 Console.WriteLine("                                         IN A WORLD");
 Thread.Sleep(2000);
 Console.WriteLine("                                    WHERE BREAD IS ILLEGAL");

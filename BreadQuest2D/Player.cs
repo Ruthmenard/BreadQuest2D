@@ -6,63 +6,63 @@
         // lists of choices for character creator
         List<string> ComprehensionChoices1 = new List<string>()
         {
-            "This bread represents sustenance and the comfort of a home-cooked meal. It reminds you of the warmth and care put into making food for loved ones.",
-            "The bread signifies abundance and prosperity, symbolizing a time when food was plentiful and life was easier. It's a reminder of better days and hope for the future.",
-            "This loaf of bread stands for resistance and rebellion. In a world where bread is banned, it represents defiance against oppressive forces and the struggle for freedom.",
-            "The bread evokes feelings of isolation and longing. It’s a solitary object in a quiet room, reflecting the loneliness and desire for connection in a harsh world.",
-            "This scene evokes a figure standing in the shadows, hoarding all the bread while others starve outside."
+            "This bread represents sustenance and the comfort of a home-cooked meal. It reminds you of the warmth and care put into making food for loved ones.",                       // Comp | End            
+            "The bread signifies abundance and prosperity, symbolizing a time when food was plentiful and life was easier. It's a reminder of better days and hope for the future.",    // Pure Comp Choice      
+            "This loaf of bread stands for resistance and rebellion. In a world where bread is banned, it represents defiance against oppressive forces and the struggle for freedom.", // Comp | Hyperawareness 
+            "The bread evokes feelings of isolation and longing. It’s a solitary object in a quiet room, reflecting the loneliness and desire for connection in a harsh world.",        // Comp | Rhetoric       
+            "This scene evokes a figure standing in the shadows, hoarding all the bread while others starve outside."                                                                   // Comp | Str            
         };
 
         List<string> ComprehensionChoices2 = new List<string>()
         {
-            "You patiently study the symbols, connecting them to your wasteland experiences, and unlock the tome’s secrets.", 
-            "You seek a nomadic scholar's help to decipher the text, working together to unravel its meaning.",
-            "You try to brute force the translation, matching symbols to known alphabets, but struggle to make sense of it.",
-            "Frustrated, you consider the book a meaningless relic and leave the library, abandoning the secrets within.",
-            "Desperate, you tear out pages for kindling, destroying valuable knowledge and damaging the library irreparably."
+            "You patiently study the symbols, connecting them to your wasteland experiences, and unlock the tome’s secrets.",       // Pure Comp Choice      
+            "You seek a nomadic scholar's help to decipher the text, working together to unravel its meaning.",                     // Comp | Hyperawareness 
+            "You try to brute force the translation, matching symbols to known alphabets, but struggle to make sense of it.",       // Comp | Rhetoric       
+            "Frustrated, you consider the book a meaningless relic and leave the library, abandoning the secrets within.",          // Comp | Agl            
+            "Desperate, you tear out pages for kindling, destroying valuable knowledge and damaging the library irreparably."       // Comp | End            
         };
 
         List<string> ComprehensionChoices3 = new List<string>()
         {
-            "You study the mural with a keen eye, using your knowledge of art history to analyze its symbols and themes.",
-            "You enlist a local historian to help you decode the mural, using urban legends and folklore to uncover its meanings.",
-            "You rely on intuition and gut instinct, letting the artwork evoke emotions and personal memories to find meaning.",
-            "Frustrated, you consider defacing the mural in anger, but your actions only obscure its true significance.",
-            "You resort to spying on the artist or bribing locals, using manipulation to uncover the mural's secrets."
+            "You study the mural with a keen eye, using your knowledge of art history to analyze its symbols and themes.",          // Pure Comp Choice      
+            "You enlist a local historian to help you decode the mural, using urban legends and folklore to uncover its meanings.", // Comp | Luck            
+            "You rely on intuition and gut instinct, letting the artwork evoke emotions and personal memories to find meaning.",    // Comp | Hype               
+            "Frustrated, you consider defacing the mural in anger, but your actions only obscure its true significance.",           // Comp | Str               
+            "You resort to spying on the artist or bribing locals, using manipulation to uncover the mural's secrets."              // Comp | Agl               
 
         };
 
         List<string> HyperawarenessChoices1 = new List<string>()
         {
-            "You break the bread and share it with the family, ensuring everyone gets a piece.",
-            "You take a small piece for yourself and give the rest to the family.",
-            "You offer to trade the bread with the family for other resources, like medicine or water.",
-            "You decide to keep the bread for yourself, reasoning that you'll need your strength to find more food for everyone later.",
-            "You take the bread and hide it, ensuring no one else can find it. You plan to hoard it and let the family fend for themselves."
+            "You break the bread and share it with the family, ensuring everyone gets a piece.",                                              // Pure Hype Choice
+            "You take a small piece for yourself and give the rest to the family.",                                                           // Hype | Str
+            "You offer to trade the bread with the family for other resources, like medicine or water.",                                      // Hype | Rhetoric
+            "You decide to keep the bread for yourself, reasoning that you'll need your strength to find more food for everyone later.",      // Hype | End
+            "You take the bread and hide it, ensuring no one else can find it. You plan to hoard it and let the family fend for themselves."  // Hype | Agl
         };
 
         List<string> HyperawarenessChoices2 = new List<string>()
         {
-            "You keenly observe the crowd, noting changes in body language and facial expressions to identify danger.",
-            "You discreetly signal to nearby allies, forming a vigilant network to monitor the crowd and respond to threats.",
-            "Overwhelmed, you focus inward, filtering out distractions to attune your senses to subtle shifts in energy.",
-            "Growing paranoid, you lash out at anyone nearby, escalating tensions and drawing unwanted attention.",
-            "You manipulate and deceive bystanders to create a diversion, exacerbating tension and risk of conflict."
+            "You keenly observe the crowd, noting changes in body language and facial expressions to identify danger.",                       // Hype | Comp
+            "You discreetly signal to nearby allies, forming a vigilant network to monitor the crowd and respond to threats.",                // Hype | Agl
+            "Overwhelmed, you focus inward, filtering out distractions to attune your senses to subtle shifts in energy.",                    // Pure Hype Choice
+            "Growing paranoid, you lash out at anyone nearby, escalating tensions and drawing unwanted attention.",                           // Hype | Str
+            "You sense a speck of grime on your Black Air Chuck 1's, as you reach down to clean them, and narrowly avoid a shot to the head." // Hype | Luck
         };
 
         List<string> HyperawarenessChoices3 = new List<string>()
         {
-            "You move cautiously, observing subtle distortions to discern reality and find the true path.",
-            "You use logic and reason to identify patterns and inconsistencies, plotting a safe course through the maze.",
-            "Overwhelmed, you center yourself with mindful breathing, attuning your senses to subtle cues.",
-            "Paranoid, you lash out at phantoms, disrupting the balance and increasing danger.",
-            "Desperate, you sacrifice others and sabotage competitors to survive, causing chaos and danger."
+            "You move cautiously, observing subtle distortions to discern reality and find the true path.",                                   // Hype | Agl
+            "You use logic and reason to identify patterns and inconsistencies, plotting a safe course through the maze.",                    // Hype | Comp
+            "Overwhelmed, you center yourself with mindful breathing, attuning your senses to subtle cues.",                                  // Pure Hype Choice
+            "Paranoid, you lash out at phantoms, disrupting the balance and increasing danger.",                                              // Hype | Luck
+            "Desperate, you sacrifice others and sabotage competitors to survive, causing chaos and danger."                                  // Hype | End
         };
 
         List<string> agilityChoices1 = new List<string>()
         {
-            "You quietly and skillfully climb up to the shelf, grab the bread, and sneak out without being noticed.",
-            "You create a distraction by knocking over some cans, then quickly grab the bread and escape while the robots investigate the noise.",
+            "You quietly and skillfully climb up to the shelf, grab the bread, and sneak out without being noticed.",                                                           
+            "You create a distraction by knocking over some cans, then quickly grab the bread and escape while the robots investigate the noise.",                              
             "You use your agility to parkour around the robots, grabbing the bread mid-move and exiting through a broken window.",
             "You find a safe spot to hide and wait for the robots to pass, then swiftly move to grab the bread when the coast is clear.",
             "You lure another scavenger into the supermarket, letting them draw the robots' attention. While the robots deal with the intruder, you grab the bread and escape."
@@ -334,7 +334,7 @@
                 Console.WriteLine("We need to know what kind of Charles you are. \nLet's go through your personality and see if we can't understand you a little better. ");
                 Console.WriteLine("A scenario will be given to you. Please choose the option that best represents how you feel about the scene.\n");
                 Console.WriteLine("Question 1/7\n");
-                Console.WriteLine("\nImagine a scene where a loaf of bread is placed on a table, with sunlight streaming through a window and casting shadows across the room. The bread is freshly baked, with a golden crust and a warm, inviting aroma.");
+                Console.WriteLine("\nImagine a scene where a loaf of bread is placed on a table, sunlight streaming through a window, casting shadows across the room. The bread is freshly baked, with a golden crust and a warm, inviting aroma.");
                 int userChoice1 = Helpers.GetUserChoice($"\nWhich option best represents how you feel? ", "You didn't provide a valid option. Please try again.", ComprehensionChoices1);
                 switch (userChoice1)
                 {
@@ -462,7 +462,7 @@
                 Console.WriteLine("Interesting. Not the choice I would have picked, but that's what makes us all special I suppose.");
                 Console.WriteLine("Next Question: ");
                 Console.WriteLine("\nQuestion 2/7\n");
-                Console.WriteLine("In a bustling post-apocalyptic city, you sense a subtle shift in the atmosphere, indicating danger. To avert disaster, you must rely on your hyperawareness to decipher subtle cues and anticipate the threat.");
+                Console.WriteLine("In a bustling post-apocalyptic city, you sense a subtle shift in the atmosphere, indicating danger. To avert disaster, you must rely on your senses to decipher subtle cues and anticipate the threat.");
                 int userChoice4 = Helpers.GetUserChoice("Which option do you choose: ", "You didn't provide a valid option. Please try again.", HyperawarenessChoices2);
                 switch (userChoice4)
                 {
@@ -493,7 +493,7 @@
                 Console.WriteLine("Interesting. Not the choice I would have picked, but that's what makes us all special I suppose.");
                 Console.WriteLine("Next Question: ");
                 Console.WriteLine("\nQuestion 2/7\n");
-                Console.WriteLine("While exploring an abandoned amusement park, you enter a haunted funhouse. You feel danger lurking and must rely on your hyperawareness to navigate the maze of illusions and traps.");
+                Console.WriteLine("While exploring an abandoned amusement park, you enter a haunted funhouse. You feel danger lurking and must rely on your senses to navigate the maze of illusions and traps.");
                 int userChoice4 = Helpers.GetUserChoice("Which option do you choose: ", "You didn't provide a valid option. Please try again.", HyperawarenessChoices3);
                 switch (userChoice4)
                 {
