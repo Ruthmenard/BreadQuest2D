@@ -1,6 +1,7 @@
 ﻿namespace BreadQuest2Dv2
 {
     public static class Helpers
+        //All answers to questions. Possibly can be deleted. 
     {
 
         static readonly string[] menuOptions = { "Inventory", "Base" };
@@ -56,6 +57,8 @@
         };
 
 
+
+        //Good String check
         public static int GetNumber(string inputMessage, string errorMessage)
         {
             bool isValid = false;
@@ -78,6 +81,7 @@
             return userSelection;
         }
 
+        //Good Int Check
         public static int GetNumberBetweenMinAndMax(string inputMessage, string errorMessage, int min, int max)
         {
             bool isValid = false;
@@ -107,6 +111,7 @@
             return userSelection;
         }
 
+        //Method to read questions and display all inputs. VERY important. 
         public static int GetUserChoice(string inputMessage, string errorMessage, List<string> choices)
         {
             if (choices.Count == 0)

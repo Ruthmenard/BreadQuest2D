@@ -196,6 +196,8 @@
         };
         #endregion
 
+
+        //Declaring all CHARLES stats
         public List<string> Inventory { get; }
         public int Comprehension { get; set; }
         public int Hyperawareness { get; set; }
@@ -207,6 +209,8 @@
         public int StatTotal { get; set; }
         public int MaxHP { get; set; }
 
+
+        //Initial Base Player Setup
         public Player()
         {
             // set default for a new player
@@ -249,6 +253,8 @@
 
         }
 
+
+        //Sequence to make bread in BASE
         public int MakeBread()
         {
             if (Inventory.Contains("Flour") && Inventory.Contains("Water") && Inventory.Contains("Salt") && Inventory.Contains("Yeast"))
@@ -323,12 +329,16 @@
             return 3; // return to base
         }
 
+        //Initial Character Creation, uses questions at the top of the page
         public void CreateCharacter()
         {
             Random random = new Random();
             int nextRandom = random.Next(1, 4);
 
             #region Assign Comprehension Stat
+
+                #region First Comp Stat
+            //First Comp Stat
             if (nextRandom == 1)
             {
                 Console.WriteLine("We need to know what kind of Charles you are. \nLet's go through your personality and see if we can't understand you a little better. ");
@@ -359,6 +369,8 @@
                         break;
                 }
             }
+            #endregion
+                #region Second Comp Stat
             else if (nextRandom == 2)
             {
                 Console.WriteLine("We need to know what kind of Charles you are. \nLet's go through your personality and see if we can't understand you a little better. ");
@@ -390,6 +402,8 @@
                 }
 
             }
+            #endregion
+                #region Third Comp Stat
             else if (nextRandom == 3)
             {
                 Console.WriteLine("We need to know what kind of Charles you are. \nLet's go through your personality and see if we can't understand you a little better. ");
@@ -420,11 +434,15 @@
                         break;
                 }
             }
+                #endregion
+
             #endregion
 
             #region Assign Hyperawareness Stat
             nextRandom = random.Next(1, 4);
             Console.Clear();
+
+                #region First Hyperawareness Stat
             if (nextRandom == 1)
             {
                 Console.WriteLine("Interesting. Not the choice I would have picked, but that's what makes us all special I suppose.");
@@ -457,6 +475,8 @@
                         break;
                 }
             }
+            #endregion
+                #region Second Hyperawareness Stat
             if (nextRandom == 2)
             {
                 Console.WriteLine("Interesting. Not the choice I would have picked, but that's what makes us all special I suppose.");
@@ -488,6 +508,8 @@
                         break;
                 }
             }
+            #endregion
+                #region Third Hyperawareness Stat
             if (nextRandom == 3)
             {
                 Console.WriteLine("Interesting. Not the choice I would have picked, but that's what makes us all special I suppose.");
@@ -521,8 +543,12 @@
             }
             #endregion
 
+            #endregion
+
             #region Assign Agility Stat
             nextRandom = random.Next(1, 4);
+
+                #region First Agility Stat
             Console.Clear();
             if (nextRandom == 1)
             {
@@ -550,6 +576,8 @@
                         break;
                 }
             }
+            #endregion
+                #region Second Agility Stat
             if (nextRandom == 2)
             {
                 Console.WriteLine("Understandable. Everyone needs to eat.");
@@ -576,6 +604,8 @@
                         break;
                 }
             }
+            #endregion
+                #region Third Agility Stat
             if (nextRandom == 3)
             {
                 Console.WriteLine("Understandable. Everyone needs to eat.");
@@ -602,37 +632,45 @@
                         break;
                 }
             }
+                #endregion  
+
             #endregion
 
             #region Assign Rhetoric Stat
             Console.Clear();
             nextRandom = random.Next(1, 4);
-            if (nextRandom == 1)
-            {
-                Console.WriteLine("Got it.");
-                Console.WriteLine("Next Question: ");
-                Console.WriteLine("\nQuestion 4/7\n");
-                Console.WriteLine("\nYou encounter a group of survivors who control access to a valuable bread supply. They are hesitant to share, citing their own survival needs and the scarcity of resources in the wasteland.");
-                int userChoice6 = Helpers.GetUserChoice("Which option do you choose: ", "You didn't provide a valid option. Please try again.", rhetoricChoices1);
-                switch (userChoice6)
+
+                #region First Rhetoric Stat
+
+                if (nextRandom == 1)
                 {
-                    case 1: //Heartfelt doesn't really mean truth though does it
-                        Rhetoric = 4;
-                        break;
-                    case 2: //Using facts and logic to OWN the Raiders
-                        Rhetoric = 8;
-                        break;
-                    case 3: //ayo? neutral
-                        Rhetoric = 5;
-                        break;
-                    case 4: //Ballsy, might not work though
-                        Rhetoric = 3;
-                        break;
-                    case 5: //Deceit is a big deal in the bakery wasteland
-                        Rhetoric = 7;
-                        break;
+                    Console.WriteLine("Got it.");
+                    Console.WriteLine("Next Question: ");
+                    Console.WriteLine("\nQuestion 4/7\n");
+                    Console.WriteLine("\nYou encounter a group of survivors who control access to a valuable bread supply. They are hesitant to share, citing their own survival needs and the scarcity of resources in the wasteland.");
+                    int userChoice6 = Helpers.GetUserChoice("Which option do you choose: ", "You didn't provide a valid option. Please try again.", rhetoricChoices1);
+                    switch (userChoice6)
+                    {
+                        case 1: //Heartfelt doesn't really mean truth though does it
+                            Rhetoric = 4;
+                            break;
+                        case 2: //Using facts and logic to OWN the Raiders
+                            Rhetoric = 8;
+                            break;
+                        case 3: //ayo? neutral
+                            Rhetoric = 5;
+                            break;
+                        case 4: //Ballsy, might not work though
+                            Rhetoric = 3;
+                            break;
+                        case 5: //Deceit is a big deal in the bakery wasteland
+                            Rhetoric = 7;
+                            break;
+                    }
                 }
-            }
+                #endregion
+                #region Second Rhetoric Stat
+
             if (nextRandom == 2)
             {
                 Console.WriteLine("Got it.");
@@ -659,6 +697,10 @@
                         break;
                 }
             }
+
+            #endregion
+                #region Third Rhetoric Stat
+
             if (nextRandom == 3)
             {
                 Console.WriteLine("Got it.");
@@ -687,9 +729,14 @@
             }
             #endregion
 
+            #endregion
+
             #region Assign Luck Stat
             Console.Clear();
             nextRandom = random.Next(1, 4);
+
+                #region First Luck Stat
+
             if (nextRandom == 1)
             {
                 Console.WriteLine("Got it.");
@@ -716,6 +763,8 @@
                         break;
                 }
             }
+            #endregion
+                #region Second Luck Stat
             if (nextRandom == 2)
             {
                 Console.WriteLine("Got it.");
@@ -742,6 +791,8 @@
                         break;
                 }
             }
+            #endregion
+                #region Third Luck Stat
             if (nextRandom == 3)
             {
                 Console.WriteLine("Got it.");
@@ -770,35 +821,41 @@
             }
             #endregion
 
+            #endregion
+
             #region Assign Endurance Stat
             Console.Clear();
             nextRandom = random.Next(1, 4);
-            if (nextRandom == 1)
-            {
-                Console.WriteLine("Got it.");
-                Console.WriteLine("Next Question: ");
-                Console.WriteLine("\nQuestion 6/7\n");
-                Console.WriteLine("\nYou find yourself stranded in a wasteland after a freak meteor shower destroys your vehicle, leaving you without transportation or supplies. As you survey the barren landscape, you notice a massive sandstorm brewing on the horizon, threatening to engulf everything in its path. You must decide how to endure the relentless onslaught of the storm.");
-                int userChoice8 = Helpers.GetUserChoice("Which option do you choose: ", "You didn't provide a valid option. Please try again.", enduranceChoices1);
-                switch (userChoice8)
+
+                #region First Endurance Stat
+                if (nextRandom == 1)
                 {
-                    case 1:
-                        Endurance = 5;
-                        break;
-                    case 2: //stupid
-                        Endurance = 6;
-                        break;
-                    case 3:
-                        Endurance = 4;
-                        break;
-                    case 4: //giving
-                        Endurance = 2;
-                        break;
-                    case 5: //sometimes it truly be like that
-                        Endurance = 7;
-                        break;
+                    Console.WriteLine("Got it.");
+                    Console.WriteLine("Next Question: ");
+                    Console.WriteLine("\nQuestion 6/7\n");
+                    Console.WriteLine("\nYou find yourself stranded in a wasteland after a freak meteor shower destroys your vehicle, leaving you without transportation or supplies. As you survey the barren landscape, you notice a massive sandstorm brewing on the horizon, threatening to engulf everything in its path. You must decide how to endure the relentless onslaught of the storm.");
+                    int userChoice8 = Helpers.GetUserChoice("Which option do you choose: ", "You didn't provide a valid option. Please try again.", enduranceChoices1);
+                    switch (userChoice8)
+                    {
+                        case 1:
+                            Endurance = 5;
+                            break;
+                        case 2: //stupid
+                            Endurance = 6;
+                            break;
+                        case 3:
+                            Endurance = 4;
+                            break;
+                        case 4: //giving
+                            Endurance = 2;
+                            break;
+                        case 5: //sometimes it truly be like that
+                            Endurance = 7;
+                            break;
+                    }
                 }
-            }
+                #endregion
+                #region Second Endurance Stat
             if (nextRandom == 2)
             {
                 Console.WriteLine("Got it.");
@@ -825,37 +882,43 @@
                         break;
                 }
             }
-            if (nextRandom == 3)
-            {
-                Console.WriteLine("Got it.");
-                Console.WriteLine("\nNext Question: ");
-                Console.WriteLine("\nQuestion 6/7\n");
-                Console.WriteLine("Trapped in an underground bunker after a catastrophic earthquake, you must endure the darkness and isolation until rescue arrives.");
-                int userChoice8 = Helpers.GetUserChoice("Which option do you choose: ", "You didn't provide a valid option. Please try again.", enduranceChoices3);
-                switch (userChoice8)
+            #endregion
+                #region Third Endurance Stat
+                if (nextRandom == 3)
                 {
-                    case 1:
-                        Endurance = 5;
-                        break;
-                    case 2: //stupid
-                        Endurance = 6;
-                        break;
-                    case 3:
-                        Endurance = 4;
-                        break;
-                    case 4: //giving
-                        Endurance = 2;
-                        break;
-                    case 5: //sometimes it truly be like that
-                        Endurance = 7;
-                        break;
+                    Console.WriteLine("Got it.");
+                    Console.WriteLine("\nNext Question: ");
+                    Console.WriteLine("\nQuestion 6/7\n");
+                    Console.WriteLine("Trapped in an underground bunker after a catastrophic earthquake, you must endure the darkness and isolation until rescue arrives.");
+                    int userChoice8 = Helpers.GetUserChoice("Which option do you choose: ", "You didn't provide a valid option. Please try again.", enduranceChoices3);
+                    switch (userChoice8)
+                    {
+                        case 1:
+                            Endurance = 5;
+                            break;
+                        case 2: //stupid
+                            Endurance = 6;
+                            break;
+                        case 3:
+                            Endurance = 4;
+                            break;
+                        case 4: //giving
+                            Endurance = 2;
+                            break;
+                        case 5: //sometimes it truly be like that
+                            Endurance = 7;
+                            break;
+                    }
                 }
-            }
+                #endregion
+
             #endregion
 
             #region Assign Strength Stat
             Console.Clear();
             nextRandom = random.Next(1, 4);
+
+            #region First Strength Stat
             if (nextRandom == 1)
             {
                 Console.WriteLine("Got it.");
@@ -882,6 +945,8 @@
                         break;
                 }
             }
+            #endregion
+            #region Second Strength Stat
             if (nextRandom == 2)
             {
                 Console.WriteLine("Got it.");
@@ -908,6 +973,8 @@
                         break;
                 }
             }
+            #endregion
+            #region Third Strength Stat
             if (nextRandom == 3)
             {
                 Console.WriteLine("Got it.");
@@ -936,6 +1003,8 @@
             }
             #endregion
 
+            #endregion
+
             // assign stat total + print
             Console.Clear();
             Console.WriteLine("\nWhelp, that's all I've got. Wanna see how you stack up?");
@@ -960,8 +1029,10 @@
             }
         }
 
+        //Declaring StatTotal 
         int newStatTotal = 0;
 
+        //Reassign Stats according to total CHARLES score.
         public void ReassignStats()
         {
             Console.WriteLine($"Total Points to Allocate: {StatTotal} ");

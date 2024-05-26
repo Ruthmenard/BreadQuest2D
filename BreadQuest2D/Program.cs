@@ -2,7 +2,7 @@
 using System.Threading;
 
 Game game;
-#region intro
+#region Intro
 Console.Title = "Bread Quest v0.13";
 Console.WriteLine("                                         IN A WORLD");
 Thread.Sleep(2000);
@@ -48,6 +48,8 @@ Console.WriteLine("                                  PRESS ANY KEY TO BEGIN");
 Console.ReadKey();
 Console.Clear();
 #endregion
+
+//Initial Choice
 Console.WriteLine("In a post-apocalyptic world dominated by AI robots, bread is banned.");
 Console.WriteLine("You are Charles, a resilient human trying to revive the tradition of bread-making.");
 Console.WriteLine("Your mission is to gather ingredients and bake bread to bring hope to your community.");

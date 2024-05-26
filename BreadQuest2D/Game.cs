@@ -12,6 +12,7 @@ namespace BreadQuest2Dv2
             Player = new Player();
         }
 
+        //Get choices and validate a good answer
         int GetGameDialogChoice(List<string> choices, params string[] openingDialog)
         {
             for (int i = 0; i < openingDialog.Length; i++)
@@ -28,7 +29,8 @@ namespace BreadQuest2Dv2
             }
             return Helpers.GetUserChoice("Enter the number of your choice: ", "You didn't provide a valid option. Please try again.", choices);
         }
-
+        
+        //Main menu, may need to be reworked depending on how game goes
         public void ShowMainMenu()
         {
             Console.Clear();
@@ -46,6 +48,7 @@ namespace BreadQuest2Dv2
             }
         }
 
+        //Base menu, may need reworked depending on how the rest of the game goes. Maybe merge with Main Menu?
         public void ShowBaseMenu()
         {
             Console.Clear();
@@ -86,6 +89,7 @@ namespace BreadQuest2Dv2
             }
         }
 
+        //First screen after Character Creator, the actual beginning of the game. Will very much need reworked as game expands.
         public void ShowInitialChoice()
         {
             Console.Clear();
@@ -105,6 +109,7 @@ namespace BreadQuest2Dv2
             }
         }
 
+        //Tenatively called Bakery option, will likely be renamed as game expands
         public void ScoutBakery()
         {
             Console.Clear();
@@ -120,6 +125,7 @@ namespace BreadQuest2Dv2
             }
         }
 
+        //Tenatively called AI option, will likely be renamed as game expands. NORKONSOLE will be in this section.
         public void CollaborateWithRogueAI()
         {
             Console.Clear();
@@ -135,6 +141,7 @@ namespace BreadQuest2Dv2
             }
         }
 
+        //Least fleshed out at the moment, a lot of work needs done. 
         public void MakeDealWithDevil()
         {
             Console.Clear();
@@ -150,6 +157,7 @@ namespace BreadQuest2Dv2
             }
         }
 
+        //From Bakery option, Scavengers is Option #1.
         public void TradeWithScavengers()
         {
             Console.Clear();
@@ -194,6 +202,7 @@ namespace BreadQuest2Dv2
             }
         }
 
+        //Bakery Option #2
         public void StealFromGrainMill()
         {
             Console.Clear();
@@ -203,6 +212,7 @@ namespace BreadQuest2Dv2
             FinalBossEvilPath();
         }
 
+        //Bakery option #3
         public void BarterForSalt()
         {
             Console.Clear();
@@ -212,6 +222,7 @@ namespace BreadQuest2Dv2
             FinalBossGoodPath();
         }
 
+        //Final Boss, currently linked to bartering but will need to change. 
         public void FinalBossGoodPath()
         {
             Console.Clear();
@@ -229,6 +240,7 @@ namespace BreadQuest2Dv2
             }
         }
 
+        //Final Boss, currently linked to bartering but will need to change. 
         public void FinalBossEvilPath()
         {
             Console.Clear();
@@ -246,6 +258,7 @@ namespace BreadQuest2Dv2
             }
         }
 
+        //AI ending
         public void HackBreweryForYeast()
         {
             Console.Clear();
@@ -255,6 +268,7 @@ namespace BreadQuest2Dv2
             FinalBossEvilPath();
         }
 
+        //Bad ending
         public void RuleWithFear()
         {
             Console.Clear();
@@ -264,6 +278,7 @@ namespace BreadQuest2Dv2
             FinalBossDevilPath();
         }
 
+        //Bad ending
         public void ManipulateAndDeceive()
         {
             Console.Clear();
@@ -273,6 +288,7 @@ namespace BreadQuest2Dv2
             FinalBossDevilPath();
         }
 
+        //Final Devil Boss
         public void FinalBossDevilPath()
         {
             Console.Clear();
