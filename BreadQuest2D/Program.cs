@@ -3,7 +3,7 @@ using System.Threading;
 
 Game game;
 #region Intro
-Console.Title = "Bread Quest v0.13";
+Console.Title = "Bread Quest v0.14";
 Console.WriteLine("                                         IN A WORLD");
 Thread.Sleep(2000);
 Console.WriteLine("                                    WHERE BREAD IS ILLEGAL");
@@ -24,7 +24,7 @@ Thread.Sleep(350);
 Console.WriteLine("_ |_|_|    _|    _|  _|_|_|_|  _|    _|  _|_|_|          _|_|  _|    _|_|    _|_|_|_|  _|_|_|        _|      ");
 Thread.Sleep(350);
 Console.WriteLine();
-Console.WriteLine("                                          A Game by JP                                "); Thread.Sleep(300);
+Console.WriteLine("                                    A Game by JP and Tyler                            "); Thread.Sleep(300);
 Console.WriteLine("                                          Music by Max                                "); Thread.Sleep(300);
 Console.WriteLine("                                          Art by Tyler                                "); Thread.Sleep(300);
 Console.WriteLine("                                    Senior Editing by Aaron                           "); Thread.Sleep(500);

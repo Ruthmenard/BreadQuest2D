@@ -449,7 +449,7 @@
                 Console.WriteLine("Next Question: ");
                 Console.WriteLine("\nQuestion 2/7\n");
                 Console.WriteLine("\nYou find a loaf of bread in a post-apocalyptic world. It looks fresh, and you're very hungry. Nearby, there’s a family with small children who are also starving.");
-                int userChoice4 = Helpers.GetUserChoice("Which option do you choose: ", "You didn't provide a valid option. Please try again.", HyperawarenessChoices1);
+                int userChoice4 = Helpers.GetUserChoice("\nWhich option do you choose: ", "You didn't provide a valid option. Please try again.", HyperawarenessChoices1);
                 switch (userChoice4)
                 {
                     case 1:
@@ -482,7 +482,7 @@
                 Console.WriteLine("Next Question: ");
                 Console.WriteLine("\nQuestion 2/7\n");
                 Console.WriteLine("In a bustling post-apocalyptic city, you sense a subtle shift in the atmosphere, indicating danger. To avert disaster, you must rely on your senses to decipher subtle cues and anticipate the threat.");
-                int userChoice4 = Helpers.GetUserChoice("Which option do you choose: ", "You didn't provide a valid option. Please try again.", HyperawarenessChoices2);
+                int userChoice4 = Helpers.GetUserChoice("\nWhich option do you choose: ", "You didn't provide a valid option. Please try again.", HyperawarenessChoices2);
                 switch (userChoice4)
                 {
                     case 1:
@@ -1164,6 +1164,7 @@
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine($"Strength - {Strength}");
             Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine($"\nMax HP is {MaxHP}");
             Console.WriteLine($"\nTotal C.H.A.R.L.E.S. Score: {StatTotal}");
         }
 

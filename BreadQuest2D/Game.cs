@@ -27,7 +27,7 @@ namespace BreadQuest2Dv2
                     Console.WriteLine(openingDialog[i]);
                 }
             }
-            return Helpers.GetUserChoice("Enter the number of your choice: ", "You didn't provide a valid option. Please try again.", choices);
+            return Helpers.GetUserChoice("\nEnter the number of your choice: ", "You didn't provide a valid option. Please try again.", choices);
         }
         
         //Main menu, may need to be reworked depending on how game goes
@@ -94,7 +94,7 @@ namespace BreadQuest2Dv2
         {
             Console.Clear();
             Console.WriteLine("You need to secure a safe base. Do you:");
-            int userChoice = Helpers.GetUserChoice("Enter the number of your choice: ", "You didn't provide a valid option. Please try again.", ["Scout an abandoned bakery in the outskirts of the city.", "Collaborate with a rogue AI to find a hidden underground hideout.", "Make a deal with the devil for total control over bread."]);
+            int userChoice = Helpers.GetUserChoice("\nEnter the number of your choice: ", "You didn't provide a valid option. Please try again.", ["Scout an abandoned bakery in the outskirts of the city.", "Collaborate with a rogue AI to find a hidden underground hideout.", "Make a deal with the devil for total control over bread."]);
             switch (userChoice)
             {
                 case 1:
@@ -176,7 +176,8 @@ namespace BreadQuest2Dv2
                 case 4:
                     Random random = new Random();
                     int nextRandom = random.Next(1, 20);
-                    Console.WriteLine($"You rolled a {nextRandom}");
+                    int totalRandom = nextRandom + Player.Rhetoric;
+                    Console.WriteLine($"You rolled a {totalRandom}");
                     if (nextRandom >= 16)
                     {
                         int choice = GetGameDialogChoice(["Visit your new base"], "[SPEECH SUCCEEDED]", "Oh wow... I... uh.... thank you. Now give me a sloppy kiss. ", "Say, I suppose you can stick around here for while.", "[You now have a half-chub and a base you can return to at any time]");
