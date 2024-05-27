@@ -25,7 +25,7 @@
         List<string> ComprehensionChoices3 = new List<string>()
         {
             "You study the mural with a keen eye, using your knowledge of art history to analyze its symbols and themes.",          // Pure Comp Choice      
-            "You enlist a local historian to help you decode the mural, using urban legends and folklore to uncover its meanings.", // Comp | Luck            
+            "You enlist a local historian to help you decode the mural, using urban legends and folklore to uncover its meanings.", // Comp | Rhetoric            
             "You rely on intuition and gut instinct, letting the artwork evoke emotions and personal memories to find meaning.",    // Comp | Hype               
             "Frustrated, you consider defacing the mural in anger, but your actions only obscure its true significance.",           // Comp | Str               
             "You resort to spying on the artist or bribing locals, using manipulation to uncover the mural's secrets."              // Comp | Agl               
@@ -61,7 +61,7 @@
 
         List<string> agilityChoices1 = new List<string>()
         {
-            "You quietly and skillfully climb up to the shelf, grab the bread, and sneak out without being noticed.",                                                             // Pure Hype Choice                        
+            "You quietly and skillfully climb up to the shelf, grab the bread, and sneak out without being noticed.",                                                             // Pure Agl Choice                        
             "You create a distraction by knocking over some cans, then quickly grab the bread and escape while the robots investigate the noise.",                                // Agl | Hype                      
             "You use your deftness to parkour around the robots, grabbing the bread mid-move and exiting through a broken window.",                                               // Agl | Comp
             "You find a safe spot to hide and wait for the robots to pass, then swiftly move to grab the bread when the coast is clear.",                                         // Agl | End
@@ -173,7 +173,7 @@
             "With keen observation and logic, you unravel each puzzle, some requiring much force, inching closer to the vault's chamber.",                                  // Str | Comp
             "Utilizing deftness, you navigate traps with grace, evading danger at every turn.",                                                                             // Str | Agl
             "Mastery of ancient languages unlocks temple secrets you have learned through training with various Masters, revealing the path to the vault.",                 // Str | Hype
-            "Instinct guides through hidden dangers, navigating with confidence in innate abilities.",                                                                      // Str | Luck
+            "Instinct guides through hidden dangers, navigating with confidence in innate abilities.",                                                                      // Str | Rhet
             "Driven by greed, brute force triggers chaos, risking all for vault's riches."                                                                                  // Pure Str Choice
         };
 
@@ -192,7 +192,7 @@
             "Using your brawn, you lift and move large debris blocking your way, creating openings and forging a path through the labyrinth.",                              // Str | Agl
             "With sheer force, you break through weakened walls, smashing obstacles in your path to carve a route through the maze.",                                       // Pure Str Choice
             "Growing frustrated by the maze's complexity, you vent your anger by smashing objects in your path, expending energy in a futile display of aggression.",       // Str | Comp
-            "In a desperate bid to escape, you charge forward blindly, using brute force to push through obstacles without regard for your own safety or exhaustion."       // Str | Luck
+            "In a desperate bid to escape, you charge forward blindly, using brute force to push through obstacles without regard for your own safety or exhaustion."       // Str | Rhet
         };
         #endregion
 
@@ -349,23 +349,23 @@
                 switch (userChoice1)
                 {
                     case 1:
-                        Comprehension = Comprehension + 7;
+                        Comprehension = Comprehension + 5;
+                        Endurance = Endurance + 1;
                         break;
                     case 2:
-                        Comprehension = Comprehension + 6;
-                        Hyperawareness = Hyperawareness + 1;
+                        Comprehension = Comprehension + 7;
                         break;
                     case 3:
-                        Comprehension = Comprehension + 6;
-                        Agility = Agility + 1;
+                        Comprehension = Comprehension + 3;
+                        Hyperawareness = Hyperawareness + 2;
                         break;
                     case 4:
-                        Comprehension = Comprehension + 4;
-                        Hyperawareness = Hyperawareness + 3;
+                        Comprehension = Comprehension + 1;
+                        Rhetoric = Rhetoric + 2;
                         break;
                     case 5:
                         Comprehension = Comprehension + 1;
-                        Strength = Strength + 6;
+                        Strength = Strength + 1;
                         break;
                 }
             }
@@ -384,20 +384,20 @@
                         Comprehension = Comprehension + 7;
                         break;
                     case 2:
-                        Comprehension = Comprehension + 6;
-                        Rhetoric = Rhetoric + 1;
+                        Comprehension = Comprehension + 4;
+                        Hyperawareness = Hyperawareness + 2;
                         break;
                     case 3:
-                        Comprehension = Comprehension + 4;
-                        Luck = Luck + 3;
+                        Comprehension = Comprehension + 3;
+                        Rhetoric = Rhetoric + 2;
                         break;
                     case 4:
-                        Comprehension = Comprehension + 2;
-                        Agility = Agility + 5;
+                        Comprehension = Comprehension + 1;
+                        Agility = Agility + 2;
                         break;
                     case 5:
                         Comprehension = Comprehension + 1;
-                        Strength = Strength + 6;
+                        Endurance = Endurance + 1;
                         break;
                 }
 
@@ -417,20 +417,20 @@
                         Comprehension = Comprehension + 7;
                         break;
                     case 2:
-                        Comprehension = Comprehension + 5;
-                        Rhetoric = Rhetoric + 2;
+                        Comprehension = Comprehension + 3;
+                        Rhetoric = Rhetoric + 3;
                         break;
                     case 3:
-                        Comprehension = Comprehension + 5;
-                        Luck = Luck + 2;
+                        Comprehension = Comprehension + 2;
+                        Hyperawareness = Hyperawareness + 3;
                         break;
                     case 4:
-                        Comprehension = Comprehension + 2;
-                        Hyperawareness = Hyperawareness + 5;
+                        Comprehension = Comprehension + 1;
+                        Strength = Strength + 1;
                         break;
                     case 5:
                         Comprehension = Comprehension + 1;
-                        Rhetoric = Rhetoric + 6;
+                        Agility = Agility + 1;
                         break;
                 }
             }
@@ -453,24 +453,23 @@
                 switch (userChoice4)
                 {
                     case 1:
-                        Hyperawareness = Hyperawareness + 2;
-                        Agility = Agility + 3;
+                        Hyperawareness = Hyperawareness + 7;
                         break;
                     case 2:
-                        Hyperawareness = 2;
-                        Luck = Luck + 2;
+                        Hyperawareness = Hyperawareness + 4;
+                        Strength = Strength + 2;
                         break;
                     case 3:
-                        Hyperawareness = 3;
+                        Hyperawareness = Hyperawareness + 1;
                         Rhetoric = Rhetoric + 2;
                         break;
                     case 4:
-                        Hyperawareness = Hyperawareness + 4;
-                        Strength = Strength + 4;
+                        Hyperawareness = Hyperawareness + 3;
+                        Endurance = Endurance + 2;
                         break;
                     case 5:
-                        Hyperawareness = Hyperawareness + 2;
-                        Endurance = Endurance + 2;
+                        Hyperawareness = Hyperawareness + 1;
+                        Agility = Agility + 1;
 
                         break;
                 }
@@ -487,24 +486,23 @@
                 switch (userChoice4)
                 {
                     case 1:
-                        Hyperawareness = 6;
-                        Strength = Strength + 1;
+                        Hyperawareness = Hyperawareness + 5;
+                        Comprehension = Comprehension + 1;
                         break;
                     case 2:
-                        Hyperawareness = 4;
-                        Luck = Luck + 1;
+                        Hyperawareness = Hyperawareness + 3;
+                        Agility = Agility + 2;
                         break;
                     case 3:
-                        Hyperawareness = 3;
-                        Endurance = Endurance + 2;
+                        Hyperawareness = Hyperawareness + 7;
                         break;
                     case 4:
-                        Hyperawareness = 4;
-                        Agility = Agility + 4;
+                        Hyperawareness = Hyperawareness + 1;
+                        Strength = Strength + 1;
                         break;
                     case 5:
                         Hyperawareness = Hyperawareness + 1;
-                        Rhetoric = Rhetoric + 8;
+                        Luck = Luck + 2;
                         break;
                 }
             }
@@ -520,24 +518,23 @@
                 switch (userChoice4)
                 {
                     case 1:
-                        Hyperawareness = 6;
-                        Strength = Strength + 1;
+                        Hyperawareness = Hyperawareness + 3;
+                        Agility = Agility + 2;
                         break;
                     case 2:
-                        Hyperawareness = 4;
-                        Luck = Luck + 1;
+                        Hyperawareness = Hyperawareness + 5;
+                        Comprehension = Comprehension + 1;
                         break;
                     case 3:
-                        Hyperawareness = 3;
-                        Endurance = Endurance + 2;
+                        Hyperawareness = Hyperawareness + 7;
                         break;
                     case 4:
-                        Hyperawareness = 4;
-                        Agility = Agility + 4;
+                        Hyperawareness = Hyperawareness + 1;
+                        Luck = Luck + 1;
                         break;
                     case 5:
-                        Hyperawareness = Hyperawareness + 1;
-                        Rhetoric = Rhetoric + 8;
+                        Hyperawareness = Hyperawareness + 2;
+                        Endurance = Endurance + 1;
                         break;
                 }
             }
@@ -560,19 +557,23 @@
                 switch (userChoice5)
                 {
                     case 1: //deft abilities, good stuff
-                        Agility = 9;
+                        Agility =  Agility + 7;
                         break;
                     case 2: //great choice as well, but has the chance to be spotted
-                        Agility = 6;
+                        Agility = Agility + 4;
+                        Hyperawareness = Hyperawareness + 2;
                         break;
                     case 3: //neutral
-                        Agility = 5;
+                        Agility = Agility + 2;
+                        Comprehension = Comprehension + 1;
                         break;
                     case 4: //charles might snore, alerting the guards
-                        Agility = 4;
+                        Agility = Agility + 2;
+                        Endurance = Endurance + 3;
                         break;
                     case 5: //charles does not use agility at all
-                        Agility = 3;
+                        Agility = Agility + 1;
+                        Rhetoric = Rhetoric + 1;
                         break;
                 }
             }
@@ -588,19 +589,23 @@
                 switch (userChoice5)
                 {
                     case 1: //deft abilities, good stuff
-                        Agility = 9;
+                        Agility = Agility + 5;
+                        Luck = Luck + 1;
                         break;
                     case 2: //great choice as well, but has the chance to be spotted
-                        Agility = 6;
+                        Agility = Agility + 4;
+                        Hyperawareness = Hyperawareness + 1;
                         break;
                     case 3: //neutral
-                        Agility = 5;
+                        Agility = Agility + 7;
                         break;
                     case 4: //charles might snore, alerting the guards
-                        Agility = 4;
+                        Agility = Agility + 2;
+                        Strength = Strength + 1;
                         break;
                     case 5: //charles does not use agility at all
-                        Agility = 3;
+                        Agility = Agility + 1;
+                        Endurance = Endurance + 1;
                         break;
                 }
             }
@@ -616,19 +621,23 @@
                 switch (userChoice5)
                 {
                     case 1: //deft abilities, good stuff
-                        Agility = 9;
+                        Agility = Agility + 7;
                         break;
                     case 2: //great choice as well, but has the chance to be spotted
-                        Agility = 6;
+                        Agility = Agility + 4;
+                        Luck = Luck + 1;
                         break;
                     case 3: //neutral
-                        Agility = 5;
+                        Agility = Agility + 4;
+                        Hyperawareness = Hyperawareness + 2;
                         break;
                     case 4: //charles might snore, alerting the guards
-                        Agility = 4;
+                        Agility = Agility + 1;
+                        Strength = Strength + 1;
                         break;
                     case 5: //charles does not use agility at all
-                        Agility = 3;
+                        Agility = Agility + 2;
+                        Rhetoric = Rhetoric + 1;
                         break;
                 }
             }
@@ -652,19 +661,23 @@
                     switch (userChoice6)
                     {
                         case 1: //Heartfelt doesn't really mean truth though does it
-                            Rhetoric = 4;
+                            Rhetoric = Rhetoric + 4;
+                            Hyperawareness = Hyperawareness + 2;
                             break;
                         case 2: //Using facts and logic to OWN the Raiders
-                            Rhetoric = 8;
+                            Rhetoric = Rhetoric + 2;
+                            Endurance = Endurance + 1;
                             break;
                         case 3: //ayo? neutral
-                            Rhetoric = 5;
+                            Rhetoric = Rhetoric + 7;
                             break;
                         case 4: //Ballsy, might not work though
-                            Rhetoric = 3;
+                            Rhetoric = Rhetoric + 1;
+                            Strength = Strength + 1;
                             break;
                         case 5: //Deceit is a big deal in the bakery wasteland
-                            Rhetoric = 7;
+                            Rhetoric = Rhetoric + 3;
+                            Comprehension = Comprehension + 2;
                             break;
                     }
                 }
@@ -681,19 +694,23 @@
                 switch (userChoice6)
                 {
                     case 1: //Heartfelt doesn't really mean truth though does it
-                        Rhetoric = 4;
+                        Rhetoric = Rhetoric + 7;
                         break;
                     case 2: //Using facts and logic to OWN the Raiders
-                        Rhetoric = 8;
+                        Rhetoric = Rhetoric + 3;
+                        Comprehension = Comprehension + 2;
                         break;
                     case 3: //ayo? neutral
-                        Rhetoric = 5;
+                        Rhetoric = Rhetoric + 5;
+                        Endurance = Endurance + 1;
                         break;
                     case 4: //Ballsy, might not work though
-                        Rhetoric = 3;
+                        Rhetoric = Rhetoric + 1; 
+                        Strength = Strength + 2;
                         break;
                     case 5: //Deceit is a big deal in the bakery wasteland
-                        Rhetoric = 7;
+                        Rhetoric = Rhetoric + 1;
+                        Luck = Luck + 1;
                         break;
                 }
             }
@@ -711,19 +728,23 @@
                 switch (userChoice6)
                 {
                     case 1: //Heartfelt doesn't really mean truth though does it
-                        Rhetoric = 4;
+                        Rhetoric = Rhetoric + 5;
+                        Comprehension = Comprehension + 1;
                         break;
                     case 2: //Using facts and logic to OWN the Raiders
-                        Rhetoric = 8;
+                        Rhetoric = Rhetoric + 7;
                         break;
                     case 3: //ayo? neutral
-                        Rhetoric = 5;
+                        Rhetoric = Rhetoric + 4;
+                        Endurance = Endurance + 1;
                         break;
                     case 4: //Ballsy, might not work though
-                        Rhetoric = 3;
+                        Rhetoric = Rhetoric + 1;
+                        Strength = Strength + 1;
                         break;
                     case 5: //Deceit is a big deal in the bakery wasteland
-                        Rhetoric = 7;
+                        Rhetoric = Rhetoric + 1;
+                        Luck = Luck + 2;
                         break;
                 }
             }
@@ -747,19 +768,23 @@
                 switch (userChoice6)
                 {
                     case 1: //Heartfelt doesn't really mean truth though does it
-                        Rhetoric = 4;
+                        Luck = Luck + 3;
+                        Rhetoric = Rhetoric + 3;
                         break;
                     case 2: //Using facts and logic to OWN the Raiders
-                        Rhetoric = 8;
+                        Luck = Luck + 3;
+                        Endurance = Endurance + 2;
                         break;
                     case 3: //ayo? neutral
-                        Rhetoric = 5;
+                        Luck = Luck + 7;
                         break;
                     case 4: //Ballsy, might not work though
-                        Rhetoric = 3;
+                        Luck = Luck + 1;
+                        Strength = Strength + 1;
                         break;
                     case 5: //Deceit is a big deal in the bakery wasteland
-                        Rhetoric = 7;
+                        Luck = Luck + 1;
+                        Comprehension = Comprehension + 2;
                         break;
                 }
             }
@@ -775,19 +800,23 @@
                 switch (userChoice6)
                 {
                     case 1: //Heartfelt doesn't really mean truth though does it
-                        Rhetoric = 4;
+                        Luck = Luck + 2;
+                        Comprehension = Comprehension + 3;
                         break;
                     case 2: //Using facts and logic to OWN the Raiders
-                        Rhetoric = 8;
+                        Luck = Luck + 5;
+                        Endurance = Endurance + 1;
                         break;
                     case 3: //ayo? neutral
-                        Rhetoric = 5;
+                        Luck = Luck + 7;
                         break;
                     case 4: //Ballsy, might not work though
-                        Rhetoric = 3;
+                        Luck = Luck + 2;
+                        Rhetoric = Rhetoric + 1;
                         break;
                     case 5: //Deceit is a big deal in the bakery wasteland
-                        Rhetoric = 7;
+                        Luck = Luck + 1;
+                        Hyperawareness = Hyperawareness + 1;
                         break;
                 }
             }
@@ -803,19 +832,23 @@
                 switch (userChoice6)
                 {
                     case 1: //Heartfelt doesn't really mean truth though does it
-                        Rhetoric = 4;
+                        Luck = Luck + 4;
+                        Hyperawareness = Hyperawareness + 2;
                         break;
                     case 2: //Using facts and logic to OWN the Raiders
-                        Rhetoric = 8;
+                        Luck = Luck + 1;
+                        Endurance = Endurance + 1;
                         break;
                     case 3: //ayo? neutral
-                        Rhetoric = 5;
+                        Luck = Luck + 7;
                         break;
                     case 4: //Ballsy, might not work though
-                        Rhetoric = 3;
+                        Luck = Luck + 2;
+                        Comprehension = Comprehension + 1;
                         break;
                     case 5: //Deceit is a big deal in the bakery wasteland
-                        Rhetoric = 7;
+                        Luck = Luck + 3;
+                        Strength = Strength + 2;
                         break;
                 }
             }
@@ -838,19 +871,23 @@
                     switch (userChoice8)
                     {
                         case 1:
-                            Endurance = 5;
+                            Endurance = Endurance + 3;
+                            Strength = Strength + 3;
                             break;
                         case 2: //stupid
-                            Endurance = 6;
-                            break;
+                            Endurance = Endurance + 7;
+                             break;
                         case 3:
-                            Endurance = 4;
+                            Endurance = Endurance + 4;
+                            Hyperawareness = Hyperawareness + 1;
                             break;
                         case 4: //giving
-                            Endurance = 2;
+                            Endurance = Endurance + 2;
+                            Comprehension = Comprehension + 1;
                             break;
                         case 5: //sometimes it truly be like that
-                            Endurance = 7;
+                            Endurance = Endurance + 1;
+                            Agility = Agility + 1;
                             break;
                     }
                 }
@@ -866,19 +903,23 @@
                 switch (userChoice8)
                 {
                     case 1:
-                        Endurance = 5;
+                        Endurance = Endurance + 5;
+                        Luck = Luck + 1;
                         break;
                     case 2: //stupid
-                        Endurance = 6;
+                        Endurance = Endurance + 4;
+                        Agility = Agility + 1;
                         break;
                     case 3:
-                        Endurance = 4;
+                        Endurance = Endurance + 7;
                         break;
                     case 4: //giving
-                        Endurance = 2;
+                        Endurance = Endurance + 1;
+                        Strength = Strength + 1;
                         break;
                     case 5: //sometimes it truly be like that
-                        Endurance = 7;
+                        Endurance = Endurance + 2;
+                        Rhetoric = Rhetoric + 1;
                         break;
                 }
             }
@@ -894,21 +935,25 @@
                     switch (userChoice8)
                     {
                         case 1:
-                            Endurance = 5;
+                            Endurance = Endurance + 3;
+                            Hyperawareness = Hyperawareness + 3;
                             break;
                         case 2: //stupid
-                            Endurance = 6;
+                            Endurance = Endurance + 2;
+                            Comprehension = Comprehension + 3;
                             break;
-                        case 3:
-                            Endurance = 4;
+                    case 3:
+                            Endurance = Endurance + 7;
                             break;
-                        case 4: //giving
-                            Endurance = 2;
+                    case 4: //giving
+                            Endurance = Endurance + 2;
+                            Rhetoric = Rhetoric + 1;
                             break;
-                        case 5: //sometimes it truly be like that
-                            Endurance = 7;
+                    case 5: //sometimes it truly be like that
+                            Endurance = Endurance + 1;
+                            Strength = Strength + 1;
                             break;
-                    }
+                }
                 }
                 #endregion
 
@@ -929,19 +974,23 @@
                 switch (userChoice9)
                 {
                     case 1:
-                        Strength = 5;
+                        Strength = Strength + 3;
+                        Comprehension = Comprehension + 3;
                         break;
                     case 2: //stupid
-                        Strength = 9;
+                        Strength = Strength + 1;
+                        Agility = Agility + 4;
                         break;
                     case 3:
-                        Strength = 7;
+                        Strength = Strength + 1;
+                        Hyperawareness = Hyperawareness + 2;
                         break;
                     case 4: //giving
-                        Strength = 5;
+                        Strength = Strength + 1;
+                        Rhetoric = Rhetoric + 1;
                         break;
                     case 5: //sometimes it truly be like that
-                        Strength = 2;
+                        Strength = Strength + 7;
                         break;
                 }
             }
@@ -957,19 +1006,23 @@
                 switch (userChoice9)
                 {
                     case 1:
-                        Strength = 5;
+                        Strength = Strength + 1;
+                        Luck = Luck + 1;
                         break;
                     case 2: //stupid
-                        Strength = 9;
+                        Strength = Strength + 4;
+                        Agility = Agility + 1;
                         break;
                     case 3:
-                        Strength = 7;
+                        Strength = Strength + 2;
+                        Comprehension = Comprehension + 1;
                         break;
                     case 4: //giving
-                        Strength = 5;
+                        Strength = Strength + 5;
+                        Endurance = Endurance + 1;
                         break;
                     case 5: //sometimes it truly be like that
-                        Strength = 2;
+                        Strength = Strength + 7;
                         break;
                 }
             }
@@ -985,19 +1038,23 @@
                 switch (userChoice9)
                 {
                     case 1:
-                        Strength = 5;
+                        Strength = Strength + 5;
+                        Hyperawareness = Hyperawareness + 1;
                         break;
                     case 2: //stupid
-                        Strength = 9;
+                        Strength = Strength + 4;
+                        Agility = Agility + 1;
                         break;
                     case 3:
-                        Strength = 7;
+                        Strength = Strength + 7;
                         break;
                     case 4: //giving
-                        Strength = 5;
+                        Strength = Strength + 2;
+                        Comprehension = Comprehension + 1;
                         break;
                     case 5: //sometimes it truly be like that
-                        Strength = 2;
+                        Strength = Strength + 1;
+                        Rhetoric = Rhetoric + 1;
                         break;
                 }
             }
