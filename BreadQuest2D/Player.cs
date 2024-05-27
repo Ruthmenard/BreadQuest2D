@@ -61,138 +61,138 @@
 
         List<string> agilityChoices1 = new List<string>()
         {
-            "You quietly and skillfully climb up to the shelf, grab the bread, and sneak out without being noticed.",                                                           
-            "You create a distraction by knocking over some cans, then quickly grab the bread and escape while the robots investigate the noise.",                              
-            "You use your agility to parkour around the robots, grabbing the bread mid-move and exiting through a broken window.",
-            "You find a safe spot to hide and wait for the robots to pass, then swiftly move to grab the bread when the coast is clear.",
-            "You lure another scavenger into the supermarket, letting them draw the robots' attention. While the robots deal with the intruder, you grab the bread and escape."
+            "You quietly and skillfully climb up to the shelf, grab the bread, and sneak out without being noticed.",                                                             // Pure Hype Choice                        
+            "You create a distraction by knocking over some cans, then quickly grab the bread and escape while the robots investigate the noise.",                                // Agl | Hype                      
+            "You use your deftness to parkour around the robots, grabbing the bread mid-move and exiting through a broken window.",                                               // Agl | Comp
+            "You find a safe spot to hide and wait for the robots to pass, then swiftly move to grab the bread when the coast is clear.",                                         // Agl | End
+            "You lure another scavenger into the supermarket, letting them draw the robots' attention. While the robots deal with the intruder, you grab the bread and escape."   // Agl | Rhet
         };
 
         List<string> agilityChoices2 = new List<string>()
         {
-            "You leap rooftop to rooftop, using obstacles to your advantage, staying ahead of pursuers.",
-            "You scale buildings, using handholds to reach rooftops, planning your next move.",
-            "You navigate alleys and passages, using reflexes to stay ahead.",
-            "Desperate, you resort to violence, hindering your ability to navigate with finesse.",
-            "You sacrifice others to escape, causing chaos and danger."
+            "You leap rooftop to rooftop, using obstacles to your advantage, staying ahead of pursuers.",                                     // Agl | Luck
+            "You scale buildings, using handholds to reach rooftops, planning your next move.",                                               // Agl | Hype
+            "You navigate alleys and passages, using reflexes to stay ahead.",                                                                // Pure Agl Choice
+            "Desperate, you resort to violence, hindering your ability to navigate with finesse.",                                            // Agl | Str
+            "You sacrifice others to escape, causing chaos and danger."                                                                       // Agl | End
         };
 
         List<string> agilityChoices3 = new List<string>()
         {
-            "You leap over rubble and gaps, navigating with nimble movements.",
-            "You contort to squeeze through narrow gaps, adapting to the terrain.",
-            "You focus inward to find hidden passages, maintaining clarity.",
-            "Frustrated, you use force to clear rubble, hindering your finesse.",
-            "You sacrifice a survivor, causing chaos and betrayal."
+            "You leap over rubble and gaps, navigating with nimble movements.",                                                               // Pure Agl Choice
+            "You contort to squeeze through narrow gaps, adapting to the terrain.",                                                           // Agl | Luck
+            "You focus inward to find hidden passages, maintaining clarity.",                                                                 // Agl | Hype
+            "Frustrated, you use force to clear rubble, hindering your finesse.",                                                             // Agl | Str
+            "You sacrifice a survivor, causing chaos and betrayal."                                                                           // Agl | Rhet 
         };
 
         List<string> rhetoricChoices1 = new List<string>()
         {
-            "You share your struggles, appealing to empathy and unity.",
-            "You argue for sharing, citing long-term benefits and survival.",
-            "You charm survivors, building rapport and trust",
-            "You intimidate with threats, demanding compliance.",
-            "You manipulate with deceit, sowing discord among survivors."
+            "You share your struggles, appealing to empathy and unity.",                                                                      // Rhet | Hype
+            "You argue for sharing, citing long-term benefits and survival.",                                                                 // Rhet | End  
+            "You charm survivors, building rapport and trust",                                                                                // Pure Rhet Choice
+            "You intimidate with threats, demanding compliance.",                                                                             // Rhet | Str
+            "You manipulate with deceit, sowing discord among survivors."                                                                     // Rhet | Comp
         };
 
         List<string> rhetoricChoices2 = new List<string>()
         {
-            "You charm the sentinel with friendly conversation, gradually earning their trust.",
-            "You appeal to the sentinel's sense of duty, emphasizing the importance of your mission.",
-            "You deceive the sentinel with lies and manipulation, painting yourself as a powerful ally",
-            "You resort to threats and intimidation, escalating tensions and risking your chances of access, but show your strength",
-            "You sacrifice bystanders to coerce the sentinel, compromising moral integrity."
+            "You charm the sentinel with friendly conversation, gradually earning their trust.",                                              // Pure Rhet Choice
+            "You appeal to the sentinel's sense of duty, emphasizing the importance of your mission.",                                        // Rhet | Comp 
+            "You deceive the sentinel with lies and manipulation, painting yourself as a powerful ally",                                      // Rhet | End
+            "You resort to threats and intimidation, escalating tensions and risking your chances of access, but show your strength",         // Rhet | Str
+            "You sacrifice bystanders to coerce the sentinel, compromising moral integrity."                                                  // Rhet | Luck
 
         };
 
         List<string> rhetoricChoices3 = new List<string>()
         {
-            "You confidently present evidence and dismantle the case against you.",
-            "You share your personal story, evoking sympathy and casting doubt.",
-            "You manipulate with deceit, sowing doubt and confusion.",
-            "You lash out, undermining credibility but intimidating the jury",
-            "You offer bribes, compromising integrity and risking consequences."
+            "You confidently present evidence and dismantle the case against you.",                                                           // Rhet | Comp
+            "You share your personal story, evoking sympathy and casting doubt.",                                                             // Pure Rhet Choice
+            "You manipulate with deceit, sowing doubt and confusion.",                                                                        // Rhet | End
+            "You lash out, undermining credibility but intimidating the jury",                                                                // Rhet | Str
+            "You offer bribes, compromising integrity and risking consequences."                                                              // Rhet | Luck
         };
 
         List<string> luckChoices3 = new List<string>()
         {
-            "You embark optimistically, trusting luck to guide you.",
-            "You approach with caution, embracing uncertainty.",
-            "Confident, you rely on intuition and serendipity.",
-            "You're skeptical, preferring careful planning.",
-            "Frustrated, you sabotage competitors for success."
+            "You embark optimistically, trusting your reasoning to guide you.",                                                               // Luck | Hype                              
+            "You approach with caution, embracing uncertainty.",                                                                              // Luck | End
+            "Confident, you rely on intuition and serendipity.",                                                                              // Pure Luck Choice
+            "You're skeptical, preferring careful planning.",                                                                                 // Luck | Comp
+            "Frustrated, you sabotage competitors for success."                                                                               // Luck | Str
         };
 
         List<string> luckChoices2 = new List<string>()
-        {
-            "You cautiously assess the odds before placing your bet, embracing uncertainty and trusting in fate to favor your endeavors.",
-            "You skeptically eye the game, ready to challenge the fairness of the odds. With a critical mind and wary demeanor, you approach with caution, prepared to overcome any obstacles.",
-            "Feeling adventurous, you eagerly dive into the excitement, fully embracing the unpredictability of the stakes. With a daring spirit, you revel in the thrill, ready to let fate guide your every move.",
-            "Growing frustrated with fate's fickleness, you demand clarity and control. Insisting on certainty may lead to missed opportunities and unintended consequences.",
-            "In a bid to tilt odds, you consider cheating, risking consequences for victory."
+        {                                                                                                   
+            "You cautiously assess the odds before placing your bet, embracing uncertainty and trusting in fate to favor your endeavors.",                                                                              // Luck | Comp
+            "You skeptically eye the game, ready to challenge the fairness of the odds. With a critical mind and wary demeanor, you approach with caution, prepared to overcome any obstacles.",                        // Luck | End
+            "Feeling adventurous, you eagerly dive into the excitement, fully embracing the unpredictability of the stakes. With a daring spirit, you revel in the thrill, ready to let fate guide your every move.",   // Pure Luck Choice
+            "Growing frustrated with fate's fickleness, you demand clarity and control. Insisting on certainty may lead to missed opportunities and unintended consequences.",                                          // Luck | Rhet
+            "In a bid to tilt odds, you consider cheating, risking consequences for victory."                                                                                                                           // Luck | Hype
         };
 
         List<string> luckChoices1 = new List<string>()
         {
-            "Approaching the fortune teller with cautious optimism, you're willing to take a chance on their predictions. With hope and an open mind, you embrace fate's uncertainty, trusting in a positive outcome.",
-            "Engaging the fortune teller skeptically, you question their predictions' validity. With a critical eye, you approach cautiously, wary of mere chance or trickery.",
-            "Feeling daring, you embrace the chance to challenge fate, placing blind trust in predictions. With reckless abandon, you throw caution aside, eager to see destiny's path.",
-            "Growing frustrated with fate's uncertainty, you demand concrete answers. Refusing vague predictions, you seek control, risking missed opportunities.",
-            "In a desperate bid to change fate, you resort to dishonest tactics. Attempting to manipulate predictions, you compromise your alignment with luck, risking backlash."
+            "Approaching the fortune teller with cautious optimism, you're willing to take a chance on their predictions. With hope and an open mind, you embrace fate's uncertainty, trusting in a positive outcome.", // Luck | Rhet
+            "Engaging the fortune teller skeptically, you question their predictions' validity. With a critical eye, you approach cautiously, wary of mere chance or trickery.",                                        // Luck | End
+            "Feeling daring, you embrace the chance to challenge fate, placing blind trust in predictions. With reckless abandon, you throw caution aside, eager to see destiny's path.",                               // Pure Luck Choice
+            "Growing frustrated with fate's uncertainty, you demand concrete answers. Refusing vague predictions, you seek control, risking missed opportunities.",                                                     // Luck | Str
+            "In a desperate bid to change fate, you resort to dishonest tactics. Attempting to manipulate predictions, you compromise your alignment with luck, risking backlash."                                      // Lck | Comp
         };
 
         List<string> enduranceChoices1 = new List<string>()
         {
-            "You hastily construct a shelter from wreckage, securing it against the storm's fury. Determined, you brace for the ordeal, drawing on inner strength.",
-            "With adrenaline surging, you seek refuge in a rumored underground bunker. Ignoring harsh conditions, you push limits, driven to survive.",
-            "Legends of a hidden oasis spur you on a perilous quest. Trusting intuition, you endure to find sanctuary from the storm.",
-            "Fear grips as adversity looms, tempting surrender. Struggling against despair, you fight for the will to persevere.",
-            "Primal instinct reigns as morality fades. Ruthless, you seize survival, ambushing others for supplies, leaving them vulnerable."
+            "You hastily construct a shelter from wreckage, securing it against the storm's fury. Determined, you brace for the ordeal, drawing on inner strength.",    // End | Str                    
+            "With adrenaline surging, you seek refuge in a rumored underground bunker. Ignoring harsh conditions, you push limits, driven to survive.",                 // Pure End Choice
+            "Legends of a hidden oasis spur you on a perilous quest. Trusting intuition, you endure to find sanctuary from the storm.",                                 // End | Hype
+            "Fear grips as adversity looms, tempting surrender. Struggling against despair, you fight for the will to persevere.",                                      // End | Comp
+            "Primal instinct reigns as morality fades. Ruthless, you seize survival, ambushing others for supplies, leaving them vulnerable."                           // End | Agl
         };
 
         List<string> enduranceChoices2 = new List<string>()
         {
-            "You ration what little supplies you have, conserving energy and water for as long as possible. With discipline, you endure the gnawing hunger and parched throat.",
-            "You scavenge for edible plants and moisture, braving the harsh environment to sustain yourself. With resourcefulness, you endure the scarcity of resources.",
-            "You embrace fasting, believing it will strengthen your resolve and cleanse your body. With faith, you endure the hunger and thirst, trusting in your resilience.",
-            "Growing desperate, you steal from others to satisfy your cravings, disregarding the consequences. With selfishness, you endure at the expense of others.",
-            "In a bid to survive, you resort to cannibalism, consuming the flesh of fallen companions. With depravity, you endure by preying on the weak."
+            "You ration what little supplies you have, conserving energy and water for as long as possible. With discipline, you endure the gnawing hunger and parched throat.",    // End | Luck
+            "You scavenge for edible plants and moisture, braving the harsh environment to sustain yourself. With resourcefulness, you endure the scarcity of resources.",          // End | Agl
+            "You embrace fasting, believing it will strengthen your resolve and cleanse your body. With faith, you endure the hunger and thirst, trusting in your resilience.",     // Pure End Choice
+            "Growing desperate, you steal from others to satisfy your cravings, disregarding the consequences. With selfishness, you endure at the expense of others.",             // End | Str
+            "In a bid to survive, you resort to cannibalism, consuming the flesh of fallen companions. With depravity, you endure by preying on the weak."                          // End | Rhet
         };
 
         List<string> enduranceChoices3 = new List<string>()
         {
-            "You ration your supplies, carefully managing your food and water to sustain yourself. With discipline, you endure the long hours in darkness, focusing on survival.",
-            "You explore the bunker, searching for alternative sources of light and sustenance. With resourcefulness, you endure the darkness, finding creative solutions to survive.",
-            "You meditate to calm your mind and conserve energy, embracing the solitude as an opportunity for self-reflection. With mindfulness, you endure the isolation, finding peace within.",
-            "Growing desperate for company, you manipulate others in the bunker to alleviate your loneliness. With manipulation, you endure by exploiting the emotions of those around you.",
-            "In a bid to escape, you sabotage the bunker's systems, endangering the lives of everyone inside. With recklessness, you endure by risking the safety of others for your own freedom."
+            "You ration your supplies, carefully managing your food and water to sustain yourself. With discipline, you endure the long hours in darkness, focusing on survival.",                  // End | Hype
+            "You explore the bunker, searching for alternative sources of light and sustenance. With resourcefulness, you endure the darkness, finding creative solutions to survive.",             // End | Comp
+            "You meditate to calm your mind and conserve energy, embracing the solitude as an opportunity for self-reflection. With mindfulness, you endure the isolation, finding peace within.",  // Pure End Choice
+            "Growing desperate for company, you manipulate others in the bunker to alleviate your loneliness. With manipulation, you endure by exploiting the emotions of those around you.",       // End | Rhet
+            "In a bid to escape, you sabotage the bunker's systems, endangering the lives of everyone inside. With recklessness, you endure by risking the safety of others for your own freedom."  // End | Str
         };
 
         List<string> strengthChoices1 = new List<string>()
         {
-            "With keen observation and logic, you unravel each puzzle, some requiring much force, inching closer to the vault's chamber.",
-            "Utilizing deftness, you navigate traps with grace, evading danger at every turn.",
-            "Mastery of ancient languages unlocks temple secrets you have learned through training with various Masters, revealing the path to the vault.",
-            "Instinct guides through hidden dangers, navigating with confidence in innate abilities.",
-            "Driven by greed, brute force triggers chaos, risking all for vault's riches."
+            "With keen observation and logic, you unravel each puzzle, some requiring much force, inching closer to the vault's chamber.",                                  // Str | Comp
+            "Utilizing deftness, you navigate traps with grace, evading danger at every turn.",                                                                             // Str | Agl
+            "Mastery of ancient languages unlocks temple secrets you have learned through training with various Masters, revealing the path to the vault.",                 // Str | Hype
+            "Instinct guides through hidden dangers, navigating with confidence in innate abilities.",                                                                      // Str | Luck
+            "Driven by greed, brute force triggers chaos, risking all for vault's riches."                                                                                  // Pure Str Choice
         };
 
         List<string> strengthChoices2 = new List<string>()
         {
-            "You clear a path through the undergrowth, pushing aside branches and obstacles with determined force.",
-            "Climbing a sturdy tree, you use your strong limbs to ascend swiftly, reaching the canopy to gain a vantage point and scan for landmarks.",
-            "With deft hands and sheer power, you gather branches and construct a sturdy shelter, fortifying it against the elements with your strength.",
-            "Frustrated by the dense vegetation, you unleash your anger on the surrounding foliage, tearing and breaking it in a fit of exhaustion-driven aggression.",
-            "Ignoring caution, you charge through the dense foliage, risking injury but relying on your brute force to push forward."
+            "You clear a path through the undergrowth, pushing aside branches and obstacles with determined force.",                                                        // Str | Luck
+            "Climbing a sturdy tree, you use your strong limbs to ascend swiftly, reaching the canopy to gain a vantage point and scan for landmarks.",                     // Str | Agl
+            "With deft hands and sheer power, you gather branches and construct a sturdy shelter, fortifying it against the elements with your strength.",                  // Str | Comp
+            "Frustrated by the dense vegetation, you unleash your anger on the surrounding foliage, tearing and breaking it in a fit of exhaustion-driven aggression.",     // Str | End
+            "Ignoring caution, you charge through the dense foliage, risking injury but relying on your brute force to push forward."                                       // Pure Str Choice
         };
 
         List<string> strengthChoices3 = new List<string>()
         {
-            "You push aside heavy stone blocks, revealing hidden passages and clearing a path through the maze with raw power.",
-            "Using your brawn, you lift and move large debris blocking your way, creating openings and forging a path through the labyrinth.",
-            "With sheer force, you break through weakened walls, smashing obstacles in your path to carve a route through the maze.",
-            "Growing frustrated by the maze's complexity, you vent your anger by smashing objects in your path, expending energy in a futile display of aggression.",
-            "In a desperate bid to escape, you charge forward blindly, using brute force to push through obstacles without regard for your own safety or exhaustion."
+            "You push aside heavy stone blocks, revealing hidden passages and clearing a path through the maze with raw power.",                                            // Str | Hype
+            "Using your brawn, you lift and move large debris blocking your way, creating openings and forging a path through the labyrinth.",                              // Str | Agl
+            "With sheer force, you break through weakened walls, smashing obstacles in your path to carve a route through the maze.",                                       // Pure Str Choice
+            "Growing frustrated by the maze's complexity, you vent your anger by smashing objects in your path, expending energy in a futile display of aggression.",       // Str | Comp
+            "In a desperate bid to escape, you charge forward blindly, using brute force to push through obstacles without regard for your own safety or exhaustion."       // Str | Luck
         };
         #endregion
 
